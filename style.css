@@ -25,14 +25,78 @@ header img {
 }
 
 header h1 {
+    position: relative;
+    top: -6%;
     text-transform: uppercase;
     font-size: 2em;
     text-align: left;
 }
 
 .second_h1 {
-    margin-left: 20%;
+    position: relative;
+    left: 10%;
 }
+
+.center-line {
+    position: relative;
+    top: 10%;
+    left: 20%;
+    border: 0;
+    width: 225px;
+    height: 4px;
+    background-color: #5d40ad;
+    transform: rotate(135deg);
+    margin: 0;
+}
+
+.button-load {
+    background-color: #5d40ad;
+    width: 32%;
+    border-radius: 20px;
+    margin: 85px auto 0;
+    text-transform: uppercase;
+    font-size: 0.5em;
+    padding: 10px 10px 10px 40px;
+}
+
+.app-store {
+    display: block;
+    float: left;
+    background-image: url(images/Icon-Apple.jpg);
+    background-repeat: no-repeat;
+    background-position: left 20px center;
+    text-align: left;
+}
+
+.google-play {
+    display: block;
+    float: right;
+    background-image: url(images/Icon-Apple.jpg);
+    background-repeat: no-repeat;
+    background-position: left 20px center;
+    text-align: left;
+}
+
+nav {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+    flex-wrap: wrap;
+    clear: both;
+    padding: 45px 0 0;
+}
+nav a{
+    display: inline-block;
+    color: #5d40ad;
+    text-decoration: none;
+    text-transform: uppercase;
+    font-size: 0.75em;
+    margin: 10px;
+    text-align: center;
+}
+
+
 
 
 @media only screen and (min-width: 321px) {
