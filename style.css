@@ -1,15 +1,26 @@
 body {
     background-color: #fff;
-    width: 100%;
+    max-width: 100%;
     font-family: 'Proxima Nova', Georgia, sans-serif;
     margin: 0 auto;
 }
+button {
+     border: 0;
+ }
 
+button:hover {
+    cursor: pointer;
+ }
+
+button:focus {
+    border: 0;
+    outline: 0;
+    box-shadow:  inset 3px 3px 35px -3px #8258fa;
+ }
 
 header {
-    max-width: 100%;
-    height: 567px;
-    background-image: url("images/header-bg.jpg");
+    height: 100vh;
+    background-image: url('images/header-bg.jpg');
     background-repeat: no-repeat;
     background-position: top center;
     background-size: cover;
@@ -25,19 +36,19 @@ header img {
 }
 
 header h1 {
-    position: relative;
-    top: -6%;
+    display: flex;
+    flex-direction: column;
+    align-content: space-around;
     text-transform: uppercase;
     font-size: 2em;
     text-align: left;
 }
 
-.second_h1 {
-    position: relative;
-    left: 10%;
+.h1_2nd_row {
+    padding-left: 25px;
 }
 
-.center-line {
+.header h1 {
     position: relative;
     top: 10%;
     left: 20%;
@@ -51,27 +62,26 @@ header h1 {
 
 .button-load {
     background-color: #5d40ad;
-    width: 32%;
+    width: 47%;
     border-radius: 20px;
-    margin: 85px auto 0;
+    margin: 85px 0 0 0;
     text-transform: uppercase;
     font-size: 0.5em;
     padding: 10px 10px 10px 40px;
+    background-repeat: no-repeat;
 }
 
 .app-store {
-    display: block;
     float: left;
-    background-image: url(images/Icon-Apple.jpg);
+    background-image: url('images/Icon-Apple.jpg');
     background-repeat: no-repeat;
     background-position: left 20px center;
     text-align: left;
 }
 
 .google-play {
-    display: block;
     float: right;
-    background-image: url(images/Icon-Apple.jpg);
+    background-image: url('images/Icon-Apple.jpg');
     background-repeat: no-repeat;
     background-position: left 20px center;
     text-align: left;
@@ -79,15 +89,14 @@ header h1 {
 
 nav {
     display: flex;
-    flex-direction: row;
     justify-content: space-around;
     align-items: center;
     flex-wrap: wrap;
     clear: both;
-    padding: 45px 0 0;
+    padding-top: 45px;
 }
-nav a{
-    display: inline-block;
+
+nav a {
     color: #5d40ad;
     text-decoration: none;
     text-transform: uppercase;
@@ -96,13 +105,20 @@ nav a{
     text-align: center;
 }
 
+nav a:hover {
+    color: #8258fa;
+}
+
+nav a:focus {
+    text-shadow: 0.0625em 0.0625em 0.125em #000, 0.2em 0.02em 0.6em #e6e6e6;
+}
 
 
 
-@media only screen and (min-width: 321px) {
+@media only screen and (min-width: 320px) {
 
 }
 
-@media only screen and (min-width: 728px) {
+@media only screen and (min-width: 768px) {
 
 }
