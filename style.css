@@ -7,7 +7,7 @@
 }
 
 @font-face {
-    font-family: 'Proxima Nova Semibold';
+    font-family: 'Proxima Nova';
     src: url('./fonts/proxima_nova_semibold-webfont.woff2') format('woff2'),
          url('./fonts/proxima_nova_semibold-webfont.woff') format('woff');
     font-weight: 600;
@@ -15,7 +15,7 @@
 }
 
 @font-face {
-    font-family: 'Proxima Nova Bold';
+    font-family: 'Proxima Nova';
     src: url('./fonts/proxima_nova_bold-webfont.woff2') format('woff2'),
          url('./fonts/proxima_nova_bold-webfont.woff') format('woff');
     font-weight: 700;
@@ -23,7 +23,7 @@
 }
 
 @font-face {
-    font-family: 'Proxima Nova Light';
+    font-family: 'Proxima Nova';
     src: url('./fonts/proxima_nova_condensed_light-webfont.woff2') format('woff2'),
          url('./fonts/proxima_nova_condensed_light-webfont.woff') format('woff');
     font-weight: 300;
@@ -56,6 +56,7 @@ button:focus {
     box-shadow:  inset 3px 3px 35px -3px #8258fa;
  }
 
+
 header {
     height: 100vh;
     background-image: url('images/header-bg.jpg');
@@ -76,7 +77,8 @@ header img {
     padding-top: 39px;
 }
 
-.header_headline {
+.header_headline,
+.athlets {
     position: relative;
     margin: auto 0;
 }
@@ -94,8 +96,10 @@ header img {
     transform: rotate(125deg);
 }
 
+
+
 .header_headline h1 {
-    font-family: 'Proxima Nova Bold', Arial, sans-serif;
+    font-weight: 700;
     letter-spacing: 1px;
     text-transform: uppercase;
     font-size: 2em;
@@ -107,6 +111,7 @@ header img {
     width: 100vw;
     padding-left: 5%;
 }
+
 @media only screen and (min-width: 321px) {
 
     .header_headline {
@@ -129,8 +134,7 @@ header img {
 }
 
 .button-load {
-    font-family: 'Proxima Nova Light', Arial, sans-serif;
-    letter-spacing: 1px;
+    font-weight: 300;
     line-height: 11px;
     background-color: #5d40ad;
     color: #fff;
@@ -146,7 +150,7 @@ header img {
 }
 
 .semibold {
-  font-family: 'Proxima Nova Semibold', Arial, sans-serif;  
+  font-weight: 600;  
 }
 
 .app-store {
@@ -167,7 +171,7 @@ nav {
 }
 
 nav a {
-    font-family: 'Proxima Nova Light', Arial, sans-serif;
+    font-weight: 300;
     letter-spacing: 1px;
     flex-basis: 30%;
     color: #5d40ad;
@@ -187,11 +191,106 @@ nav a:focus {
     text-shadow: .0625em .0625em .125em #000, .2em .02em .6em #e6e6e6;
 }
 
-
-
-@media only screen and (min-width: 320px) {
-
+.athlets {
+    background: url('./images/plus-plus.png') no-repeat 16% 16%, linear-gradient(to bottom, #fff 50%, #f5f4f9 50%);
+    height: 100vh;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-direction: column; 
+    overflow: auto;
 }
+
+.athlets img {
+    z-index: 2;
+    position: relative;
+}
+
+.athlets_img_container {  
+    z-index: 2;
+    position: relative;
+}
+
+.athlets_img_container:after {
+    content: '';
+    position: absolute;
+    z-index: 1;
+    top: 8.7%;
+    left: 91%;
+    height: 3px;
+    width: 250px;
+    transform-origin: 0 0;
+    transform: rotate(135deg);
+    background-color: #936eea;
+}
+
+.headline_athlets {
+  font-size: 3.125em; 
+  text-transform: uppercase;
+  color: #e7e7e7;
+  font-weight: 700; 
+  align-self: flex-start;
+  margin: 0;
+  padding-top: 26px;
+  padding-left: 6%;
+}
+
+.name_athlet {
+    text-align: left;
+    font-size: 1.75em;
+    font-weight: 700;
+    color: #e7e7e7;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    padding-left: 12px;
+}
+
+.desription_athlet {
+    font-size: 0.9375em;
+    color: #000;
+    font-weight: 400;
+    width: 88.5%;
+    padding-left: 6%;
+    padding-bottom: 35px;
+    margin: auto 0;
+}
+
+.number_name_athlet {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    padding-left: 6%;
+}
+
+.number_athlet {
+    display: block;
+    font-weight: 700;
+    border-bottom: 4px solid #5e42b0;
+}
+
+.switch_dots {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 54px;
+    margin: 0 auto;
+    padding-bottom: 26px;
+}
+
+.switch_dots .dot {
+    background-color: #d8d8d8;
+    width: 10px;
+    height: 10px;
+    border-radius: 5px;
+}
+
+.switch_dots .dot:hover,
+.switch_dots .dot:focus {
+    background-color: #5c3caf;
+    cursor: pointer;
+}
+
+
 
 @media only screen and (min-width: 768px) {
 
