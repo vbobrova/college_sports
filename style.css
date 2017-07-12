@@ -191,7 +191,7 @@ nav a:focus {
     text-shadow: .0625em .0625em .125em #000, .2em .02em .6em #e6e6e6;
 }
 
-.athlets {
+.athlets_players {
     background: url('./images/plus-plus.png') no-repeat 16% 16%, linear-gradient(to bottom, #fff 50%, #f5f4f9 50%);
     height: 100vh;
     display: flex;
@@ -201,17 +201,17 @@ nav a:focus {
     overflow: auto;
 }
 
-.athlets img {
+.athlets_players img {
     z-index: 2;
     position: relative;
 }
 
-.athlets_img_container {  
+.athlets_players_img_container {  
     z-index: 2;
     position: relative;
 }
 
-.athlets_img_container:after {
+.athlets_players_img_container:after {
     content: '';
     position: absolute;
     z-index: 1;
@@ -224,7 +224,7 @@ nav a:focus {
     background-color: #936eea;
 }
 
-.headline_athlets {
+.headline_athlets_players {
   font-size: 3.125em; 
   text-transform: uppercase;
   color: #e7e7e7;
@@ -235,7 +235,7 @@ nav a:focus {
   padding-left: 6%;
 }
 
-.name_athlet {
+.name_athlet_player {
     text-align: left;
     font-size: 1.75em;
     font-weight: 700;
@@ -245,7 +245,7 @@ nav a:focus {
     padding-left: 12px;
 }
 
-.desription_athlet {
+.desription_athlet_player {
     font-size: 0.9375em;
     color: #000;
     font-weight: 400;
@@ -255,14 +255,14 @@ nav a:focus {
     margin: auto 0;
 }
 
-.number_name_athlet {
+.number_name_athlet_player {
     display: flex;
     justify-content: flex-start;
     align-items: center;
     padding-left: 6%;
 }
 
-.number_athlet {
+.number_athlet_player {
     display: block;
     font-weight: 700;
     border-bottom: 4px solid #5e42b0;
@@ -274,7 +274,7 @@ nav a:focus {
     align-items: center;
     width: 54px;
     margin: 0 auto;
-    padding-bottom: 26px;
+    padding-bottom: 27px;
 }
 
 .switch_dots .dot {
