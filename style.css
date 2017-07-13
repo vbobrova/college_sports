@@ -191,17 +191,19 @@ nav a:focus {
     text-shadow: .0625em .0625em .125em #000, .2em .02em .6em #e6e6e6;
 }
 
-.athlets_players {
+.athlets,
+.players {
     background: url('./images/plus-plus.png') no-repeat 16% 16%, linear-gradient(to bottom, #fff 50%, #f5f4f9 50%);
     height: 100vh;
     display: flex;
     justify-content: space-between;
     align-items: center;
     flex-direction: column; 
-    overflow: auto;
+    overflow: hidden;
 }
 
-.athlets_players img {
+.athlets img,
+.players img {
     z-index: 2;
     position: relative;
 }
@@ -209,6 +211,7 @@ nav a:focus {
 .athlets_players_img_container {  
     z-index: 2;
     position: relative;
+    max-height: 265px;
 }
 
 .athlets_players_img_container:after {
@@ -224,7 +227,8 @@ nav a:focus {
     background-color: #936eea;
 }
 
-.headline_athlets_players {
+.headline_athlets,
+.headline_players {
   font-size: 3.125em; 
   text-transform: uppercase;
   color: #e7e7e7;
@@ -235,17 +239,22 @@ nav a:focus {
   padding-left: 6%;
 }
 
-.name_athlet_player {
+.base_description {
+    width: 100%;
+}
+.name_player, .name_athlet,
+.name_be_active {
     text-align: left;
     font-size: 1.75em;
     font-weight: 700;
-    color: #e7e7e7;
+    color: #c1c1c1;
     text-transform: uppercase;
     letter-spacing: 1px;
     padding-left: 12px;
 }
 
-.desription_athlet_player {
+.description_player, .description_athlet,
+.description_be_active {
     font-size: 0.9375em;
     color: #000;
     font-weight: 400;
@@ -255,14 +264,16 @@ nav a:focus {
     margin: auto 0;
 }
 
-.number_name_athlet_player {
+.number_name_athlet,
+.number_name_player {
     display: flex;
     justify-content: flex-start;
     align-items: center;
     padding-left: 6%;
 }
 
-.number_athlet_player {
+.number_athlet,
+.number_player {
     display: block;
     font-weight: 700;
     border-bottom: 4px solid #5e42b0;
@@ -290,7 +301,59 @@ nav a:focus {
     cursor: pointer;
 }
 
+.be_active {
+    height: 100vh;
+}
 
+.be_active img {
+    height: 351px;
+    width: 100%;
+    position: relative;
+    z-index: 1;
+}
+
+.purple_box {
+    position: relative;
+    width: 70px;
+    height: 70px;
+    background-color: #5e42b0;
+    z-index: 2;
+    top: -10%;
+    left: 6%;
+    text-align: center;
+}
+
+.number_be_active {
+    display: inline-block;
+    font-weight: 700;
+    border-bottom: 4px solid #8f7bc8;
+    color: #fff;
+    padding-top: 10px;
+}
+
+.name_be_active {
+    padding-left: 6%;
+    color: #e7e7e7;
+}
+
+.description_be_active {
+    position: relative;
+}
+
+.description_be_active:after {
+    content:'';
+    position: absolute;
+    width: 22px;
+    height: 4px;
+    background: #5e3db3;
+    border-radius: 1px;
+    top: 100%;
+    left: 7%;
+}
+
+.be_active .base_description {
+    margin-top: -60px;
+}
 
 @media only screen and (min-width: 768px) {
 
